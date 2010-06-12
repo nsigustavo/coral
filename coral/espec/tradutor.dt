@@ -1,0 +1,46 @@
+
+    >>> from coral.tradutor import Tradutor
+
+    1. Dado que eu tenha um Tradutor:
+        >>> tradutor = Tradutor()
+
+        1. 1. Deveria conter um dicionario com as palavras reservadas do python:
+            >>> tradutor.dicionario['classe']
+            'class'
+            >>> tradutor.dicionario['funcao']
+            'def'
+
+        1. 2. Deveria traduzir um código python:
+
+            >>> tradutor.coralToPy("classe A: passar")
+            'class A :pass '
+
+            >>> tradutor.coralToPy("para cada item em [1,2]: imprimir item")
+            'for item in [1 ,2 ]:print item '
+
+            >>> tradutor.coralToPy("funcao teste(x, y): retorne x == y")
+            'def teste (x ,y ):return x ==y '
+
+        1. 3. Deveira gerar erro de copilação:
+            >>> tradutor.coralToPy("classe A: ) passar")
+            Traceback (most recent call last):
+            ...
+            TokenError: ('EOF in multi-line statement', (2, 0))
+
+
+    2. Dado que eu tenha um arquivo de configuração "dicionario.yaml" em algum 'path' do python:
+        >>> from ghelpers import folder
+        >>> import sys
+        >>> sys.path.append(folder()) #path do modulo
+        >>> with file(folder()+'/dicionario.yaml','w') as f: #aquivo no modulo
+        ...     f.write('palavra: traducao')
+        
+        2. 1. Deveria conter a tradução da palavra configurado no arquivo:
+            >>> tradutor = Tradutor()
+            >>> tradutor.dicionario['palavra']
+            'traducao'
+
+
+
+
+

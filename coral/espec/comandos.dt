@@ -1,0 +1,59 @@
+
+    >>> from ludibrio import *
+    >>> import sys
+    >>> import os
+    >>> import tempfile
+    >>> import commands
+
+    >>> velho_argv = sys.argv
+    >>> velho_getcwd = os.getcwd
+    
+    >>> dir = tempfile.mktemp()
+    >>> os.mkdir(dir)
+    >>> filename = dir + '/temp.coral'
+
+    >>> with open(filename, 'w') as f:
+    ...     f.write('imprimir "Ola mundo"')
+
+    >>> sys.argv = Stub()
+    >>> os.getcwd = Stub()
+
+
+    1. Dado que eu tenha um arquivo coral:
+        >>> with sys.argv:
+        ...     sys.argv[1] >> 'temp.coral'
+        
+        >>> with os.getcwd:
+        ...     os.getcwd() >> dir
+    
+        1. 1. Deveria copilar para pyc o arquivo coral:
+            >>> from coral.comandos import Comandos
+            >>> coral = Comandos().executar
+            >>> coral()
+
+            >>> commands.getoutput('python '+dir+'/temp.pyc')
+            'Ola mundo'
+
+        1. 2. Deveria traduzir o código de portugues para ingles:
+            >>> traduzir = Comandos().traduzir
+            >>> traduzir()
+            >>> with file(dir+'/temp.py') as f:
+            ...     f.read()
+            'print "Ola mundo"'
+
+
+        1. 2. Deveria traduzir o código de ingles para portugues:
+            >>> with sys.argv:
+            ...     sys.argv[1] >> 'temp.py'
+            >>> os.remove(dir+'/temp.coral')
+            
+            >>> traduzir = Comandos().traduzir
+            >>> traduzir()
+            >>> with file(dir+'/temp.coral') as f:
+            ...     f.read()
+            'imprima "Ola mundo"'
+
+    >>> sys.argv = velho_argv
+    >>> os.getcwd = velho_getcwd
+
+
