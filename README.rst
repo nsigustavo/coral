@@ -1,21 +1,11 @@
 
 .. image:: http://sitecoral.appspot.com/coral.png
-Python para Brasileiros, por Gustavo Rezende
-|
-|
-|
+Python para Brasileiros, por Gustavo Rezende <nsigustavo@gmail.com>
 
-Autor
-=====
-* Gustavo Rezende <nsigustavo@gmail.com>
-
+|
+|
 
 .. image:: http://sitecoral.appspot.com/aulacoral.png
-
-
-|
-|
-|
 
 
 Resumo
