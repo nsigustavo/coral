@@ -27,6 +27,7 @@ Este tutorial não almeja ser abrangente ou abordar todos os aspectos, nem mesmo
 |
 |
 |
+
 Abrindo o Apetite
 =================
 
@@ -46,17 +47,20 @@ No próximo capítulo, a mecânica de utilização do interpretador é explicada
 |
 |
 |
+
 Utilizando o interpretador
 ==========================
 
 Este capitulo descreverá a instalação do Coral. Também descreveremos o processo de  compilação e execução de seu códig e o modo iterativo. Nesse modo o interpretador requisita por comandos Coral  iterativamente através do prompt primário.
 
+|
 
 Instalação
 ----------
 
 Coral é um módulo python padrão (coral). Como pré-requesito, é necessário que você tenha instalado o python 2.5 ou superior. Os itens seguintes descreve como instalar o coral no Linux Ubuntu. Entretanto, a installação do Windows  será adicionado futuramente no tutorial.
 
+|
 
 Instalação do Coral no Ubuntu
 -----------------------------
@@ -80,6 +84,8 @@ Agora que vc já possui os pré-requesitos para instalação do Coral, basta exe
 
     $ sudo easy_install coral
 
+|
+
 Linha de comandos
 -----------------
 
@@ -94,6 +100,7 @@ O modulo coral do Python é o compilador que traduz código em Coral para o byte
 * icoral
     - incia o modo iterativo do coral, nesse modo o interpretador requisita por comandos Coral ou Python iterativamente através do prompt primário.
 
+|
 
 Disparando o interpretador
 --------------------------
@@ -126,6 +133,7 @@ Linhas de continuação são necessárias em construções multi-linha. Como exe
     v
     o
 
+|
 
 Scripts Executáveis em Coral
 ----------------------------
@@ -143,6 +151,7 @@ Para executar o arquivo bastar clicalo 2 vezes ou chame diretamente na linha de 
 
     $ ./meuscript.coral
 
+|
 
 Scripts Executáveis em Python
 -----------------------------
