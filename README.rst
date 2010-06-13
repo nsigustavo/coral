@@ -9,6 +9,10 @@ Autor
 =====
 * Gustavo Rezende <nsigustavo@gmail.com>
 
+
+.. image:: http://sitecoral.appspot.com/aulacoral.png
+
+
 |
 |
 |
