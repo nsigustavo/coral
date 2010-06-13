@@ -2,9 +2,6 @@
 .. image:: http://sitecoral.appspot.com/coral.png
 Python para Brasileiros, por Gustavo Rezende <nsigustavo@gmail.com>
 
-|
-|
-
 .. image:: http://sitecoral.appspot.com/aulacoral.png
 
 
@@ -12,7 +9,7 @@ Resumo
 ------
 
 Coral é uma linguagem de programação poderosa e de fácil aprendizado. Ela possui estruturas de dados de alto nível eficientes, bem como adota uma abordagem simples e efetiva para a programação orientada a objetos. Sua sintaxe elegante e tipagem dinâmica, em adição à sua natureza interpretada, tornam Coral ideal para scripting e para o desenvolvimento rápido de aplicações em diversas áreas e na maioria das plataformas.  Esta magnífica linguamge, é similar a linguagem de programação Python sendo interpretada por sua Maquina Virtual e compatível com programas Pythons existentes.
-Coral não se trata exatamente de uma nova linguagem, sintaticamente ela é exatamente igual a linguagem Python somante modificando suas palavras reservadas para o português. Otra característica importante é que novas traduções de bibliotecas python podem ser acrescentadas de maneira fácil e elegante. O interpretador Coral é facilmente extensível incorporando novas funcionalidaes e traduções do Python, simplesmente adicionando um dicionario para os termos utilizados.
+Coral não se trata exatamente de uma nova linguagem, sintaticamente ela é exatamente igual a linguagem Python somante modificando suas palavras reservadas para o português. Outra característica importante é que novas traduções de bibliotecas python podem ser acrescentadas de maneira fácil e elegante. O interpretador Coral é facilmente extensível incorporando novas funcionalidaes e traduções do Python, simplesmente adicionando um dicionario para os termos utilizados.
 O interpretador de Python é utilizado, para gereção de seu bytecodes sendo também plenamente interoperável com Python e vice-versa. A utilização de qualquer bibliotéca Python é totalmente transparente onde são utilizadas e estão disponíveis para a maioria das plataformas a partir do site, http://www.python.org/, e distribuídos livremente. 
 Esta texto introduz o leitor informalmente aos conceitos básicos e aspectos do sistema e linguagem Coral. É aconselhável ter um interpretador Python disponível para se poder *por a mão na massa*, porém todos os exemplos são auto-contidos, assim o tutorial também pode ser lido sem que haja a necessidade de se estar on-line. 
 Para uma descrição dos módulos e objetos padrão, veja o documento Referência da Biblioteca Python. O Manual de Referência Python oferece uma definição formal da linguagem e extença documentação. Existem também diversos livros abordando Python em maior profundidade. 
