@@ -86,11 +86,11 @@ Linha de comandos
 O modulo coral do Python é o compilador que traduz código em Coral para o bytecode do Python. Ele cria todos os comandos necessário para a utilização do Coral como: 
 
 * coral [ARQUIVO]
-    - conpila arquivos com extenção *.coral* para *.pyc*s
+    - conpila arquivos com extenção* .coral* para* .pyc*s
 * traduzir [ARQUIVO]
     - traduz arquivos do Coral  para Python e vice-versa, dependendo da exenteção passada.
 * coralexec [ARQUIVO]
-    - compila e executa arquivos com extenção *.coral* para *.pyc*s
+    - compila e executa arquivos com extenção* .coral* para* .pyc*s
 * icoral
     - incia o modo iterativo do coral, nesse modo o interpretador requisita por comandos Coral ou Python iterativamente através do prompt primário.
 
