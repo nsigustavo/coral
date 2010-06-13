@@ -56,7 +56,7 @@ Coral é um módulo python padrão (coral). Como pré-requesito, é necessário 
 Instalação do Coral no Ubuntu
 -----------------------------
 
-A instalação no Linux é mais fácil, isso porque praticamente todas as distribuições já trazem o interpretador python instalado, assim não vai ser preciso cobrir a instalação do python. Caso não possua a instlanção do python2.6. Execute estes passos::
+A instalação no Linux é mais fácil, isso porque praticamente todas as distribuições já trazem o interpretador python instalado, assim não vai ser preciso cobrir a instalação do python. Caso não possua a instlanção atualizada do python. Execute estes passos::
 
     $ wget http://www.python.org/ftp/python/2.6.5/Python-2.6.5.tar.bz2 
     $ tar xzf Python-2.6.5.tar.bz2 
@@ -69,7 +69,7 @@ Setuptools provê uma série de ferramentas para distribuição e gerenciamento 
 A ferramenta "easy_install" permite que você instale um egg do pypi.python.org (ou outro local, mas aí você terá que explicitar a URL) digitando apenas "easy_install nome_do_pacote". Pense no easy_install como um "apt" de pacotes python::
 
     $ wget http://peak.telecommunity.com/dist/ez_setup.py 
-    $ sudo python2.4 ez_setup.py
+    $ sudo python ez_setup.py
 
 Agora que vc já possui os pré-requesitos para instalação do Coral, basta executar ::
 
