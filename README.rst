@@ -67,7 +67,7 @@ Instalação do Coral no Ubuntu
 Linha de comandos
 -----------------
 
-O modulo coral do Python é o compilador que traduz código em Coral para o bytecode do Python. Ele cria todos os comandos necessário para a utilização do Coral como: 
+    O modulo coral do Python é o compilador que traduz código em Coral para o bytecode do Python. Ele cria todos os comandos necessário para a utilização do Coral como: 
 
     * coral 
         - Uso: **coral** [ARQUIVO]... 
@@ -93,11 +93,12 @@ Disparando o interpretador
     Digitando um caracter EOF() (Control-D no UNIX) diretamente no prompt força o interpretador a sair com status de saída zero. Se isso não funcionar, voce pode sair do interpretador através da digitação do seguinte: ‘exit'. 
     Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (‘>>> ') ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (‘... '). 
     O interpretador imprime uma mensagem de boas vindas, informando seu número de versão e uma nota legal de copyright antes de oferecer o primeiro prompt::
+
         $ icoral 
-    Python 2.6.2 (release26-maint, Apr 19 2009, 01:56:41) 
-    [GCC 4.3.3] no linux2 
-    O Coral iterativo é baseado no IPython 
-    (icoral 1.0) 
+        Python 2.6.2 (release26-maint, Apr 19 2009, 01:56:41) 
+        [GCC 4.3.3] no linux2 
+        O Coral iterativo é baseado no IPython 
+        (icoral 1.0) 
         >>> 
 
     Linhas de continuação são necessárias em construções multi-linha. Como exemplo, dê uma olhada nesse comando *se*::
@@ -129,11 +130,12 @@ Scripts Executáveis em Coral
 Scripts Executáveis em Python
 -----------------------------
 
-    Scripts Coral podem ser transformados em arquivos python compilados. Ao executar o comando coralexec ou simplismente coral, o interpretador irá criar um arquivo com o bytecode python com extenção “.pyc”, sendo que o comando “coral” apenas irá compilar enquanto o “coralexec” tambem irá executa-lo após copilar.
+    Scripts Coral podem ser transformados em arquivos python compilados. Ao executar o comando coralexec ou simplismente coral, o interpretador irá criar um arquivo com o bytecode python com extenção *.pyc*, sendo que o comando *coral* apenas irá compilar enquanto o *coralexec* tambem irá executa-lo após copilar.
     Para compilar seu código coral, apenas execute::
-    
+
         $ coral meuscript.coral
-    
-    O arquivo “meuscript.coral” contendo seu código irá ser compilado e criará um arquivo chamado “meuscript.pyc”. Este código compilado para Python é totalmente compatível com outros códigos Python. Ex.::
-        $ python meuscript.pyc 
+
+    O arquivo *meuscript.cora* contendo seu código irá ser compilado e criará um arquivo chamado *meuscript.pyc*. Este código compilado para Python é totalmente compatível com outros códigos Python. Ex.::
+
+        $ python meuscript.pyc
 
