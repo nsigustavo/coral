@@ -1,6 +1,6 @@
 
 .. image:: http://sitecoral.appspot.com/coral.png
-
+Python para Brasileiros, por Gustavo Rezende
 |
 |
 |
