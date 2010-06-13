@@ -86,11 +86,11 @@ Linha de comandos
 O modulo coral do Python é o compilador que traduz código em Coral para o bytecode do Python. Ele cria todos os comandos necessário para a utilização do Coral como: 
 
 * coral [ARQUIVO]
-    - conpila arquivos com extenção * .coral* para * .pyc*s
+    - conpila arquivos com extenção *\.coral* para *\.pyc*s
 * traduzir [ARQUIVO]
     - traduz arquivos do Coral  para Python e vice-versa, dependendo da exenteção passada.
 * coralexec [ARQUIVO]
-    - compila e executa arquivos com extenção * .coral* para * .pyc*s
+    - compila e executa arquivos com extenção *\.coral* para *\.pyc*s
 * icoral
     - incia o modo iterativo do coral, nesse modo o interpretador requisita por comandos Coral ou Python iterativamente através do prompt primário.
 
@@ -103,7 +103,7 @@ O interpretador é iniciado ao executar icoral no shell  de seu Linux::
     $ icoral
 
 Digitando um caracter EOF() (Control-D no UNIX) diretamente no prompt força o interpretador a sair com status de saída zero. Se isso não funcionar, voce pode sair do interpretador através da digitação do seguinte: *exit*. 
-Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (*>>> *) ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (* ... *). 
+Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (*>>> *) ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (*\... *). 
 O interpretador imprime uma mensagem de boas vindas, informando seu número de versão e uma nota legal de copyright antes de oferecer o primeiro prompt::
 
     $ icoral 
