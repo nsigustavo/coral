@@ -2,9 +2,15 @@
 .. image:: http://sitecoral.appspot.com/coral.png
 
 
-======
+Autor
+=====
+    * Gustavo Rezende <nsigustavo@gmail.com>
+
+
+
+
 Resumo
-======
+------
 
     Coral é uma linguagem de programação poderosa e de fácil aprendizado. Ela possui estruturas de dados de alto nível eficientes, bem como adota uma abordagem simples e efetiva para a programação orientada a objetos. Sua sintaxe elegante e tipagem dinâmica, em adição à sua natureza interpretada, tornam Coral ideal para scripting e para o desenvolvimento rápido de aplicações em diversas áreas e na maioria das plataformas.  Esta magnífica linguamge, é similar a linguagem de programação Python sendo interpretada por sua Maquina Virtual e compatível com programas Pythons existentes.
     Coral não se trata exatamente de uma nova linguagem, sintaticamente ela é exatamente igual a linguagem Python somante modificando suas palavras reservadas para o português. Otra característica importante é que novas traduções de bibliotecas python podem ser acrescentadas de maneira fácil e elegante. O interpretador Coral é facilmente extensível incorporando novas funcionalidaes e traduções do Python, simplesmente adicionando um dicionario para os termos utilizados.
