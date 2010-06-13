@@ -103,7 +103,7 @@ O interpretador é iniciado ao executar icoral no shell  de seu Linux::
     $ icoral
 
 Digitando um caracter EOF() (Control-D no UNIX) diretamente no prompt força o interpretador a sair com status de saída zero. Se isso não funcionar, voce pode sair do interpretador através da digitação do seguinte: *exit*. 
-Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (*>>> *) ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (*... *). 
+Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (*>>> *) ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (* ... *). 
 O interpretador imprime uma mensagem de boas vindas, informando seu número de versão e uma nota legal de copyright antes de oferecer o primeiro prompt::
 
     $ icoral 
