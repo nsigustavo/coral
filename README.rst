@@ -3,11 +3,13 @@
 
 |
 |
+|
 
 Autor
 =====
 * Gustavo Rezende <nsigustavo@gmail.com>
 
+|
 |
 |
 
@@ -22,6 +24,7 @@ Esta texto introduz o leitor informalmente aos conceitos básicos e aspectos do 
 Para uma descrição dos módulos e objetos padrão, veja o documento Referência da Biblioteca Python. O Manual de Referência Python oferece uma definição formal da linguagem e extença documentação. Existem também diversos livros abordando Python em maior profundidade. 
 Este tutorial não almeja ser abrangente ou abordar todos os aspectos, nem mesmo todos os mais frequentes. Ao invés disso, ele introduz muitas das características dignas de nota em Coral, e fornecerá a você uma boa idéia sobre o estilo e o sabor da linguagem (de nossa linguagem). Após a leitura, você deve ser capaz de ler e escrever programas e módulos em Coral, e estará pronto para aprender mais sobre os diversos módulos de biblioteca descritos na Referência da Biblioteca Python e Coral.
 
+|
 |
 |
 Abrindo o Apetite
@@ -40,6 +43,7 @@ Agora que você está entusiasmado com Coral, vai desejar examiná-la com maior 
 No próximo capítulo, a mecânica de utilização do interpretador é explicada. Essa informação, ainda que mundana, é essencial para a experimentação dos exemplos apresentados mais tarde. O resto do tutorial introduz diversos aspectos do sistema e linguagem Coral por intermédio de exemplos. Serão abordadas expressões simples, comandos, tipos, funções e módulos. Finalmente, serão explicados alguns conceitos avançados como exceções e classes definidas pelo usuário. 
 
 
+|
 |
 |
 Utilizando o interpretador
