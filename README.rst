@@ -21,7 +21,7 @@ Abrindo o Apetite
 
     * Coral permite a escrita de programas compactos e legíveis. Programas escritos em Coral são tipicamente mais curtos do que seus equivalentes em C ou C++, por diversas razões:
     * os tipos de alto-nível permitem que você expresse operações complexas em uma único comando (statement); 
-a definição de bloco é feita por identação ao invés de marcadores de início e fim de bloco; 
+    * a definição de bloco é feita por identação ao invés de marcadores de início e fim de bloco; 
     * não há necessidade de declaração de variáveis ou parâmetros formais;
 
     Coral é extensível: se você sabe como programar em C, é fácil adicionar funções ou módulos diretamente no interpretador, seja para desempenhar operações críticas em máxima velocidade, ou para vincular programas Coral a bibliotecas que só estejam disponívies em formato binário (como uma bibloteca gráfica de terceiros). 
