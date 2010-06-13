@@ -20,7 +20,7 @@ Resumo
 Coral é uma linguagem de programação poderosa e de fácil aprendizado. Ela possui estruturas de dados de alto nível eficientes, bem como adota uma abordagem simples e efetiva para a programação orientada a objetos. Sua sintaxe elegante e tipagem dinâmica, em adição à sua natureza interpretada, tornam Coral ideal para scripting e para o desenvolvimento rápido de aplicações em diversas áreas e na maioria das plataformas.  Esta magnífica linguamge, é similar a linguagem de programação Python sendo interpretada por sua Maquina Virtual e compatível com programas Pythons existentes.
 Coral não se trata exatamente de uma nova linguagem, sintaticamente ela é exatamente igual a linguagem Python somante modificando suas palavras reservadas para o português. Otra característica importante é que novas traduções de bibliotecas python podem ser acrescentadas de maneira fácil e elegante. O interpretador Coral é facilmente extensível incorporando novas funcionalidaes e traduções do Python, simplesmente adicionando um dicionario para os termos utilizados.
 O interpretador de Python é utilizado, para gereção de seu bytecodes sendo também plenamente interoperável com Python e vice-versa. A utilização de qualquer bibliotéca Python é totalmente transparente onde são utilizadas e estão disponíveis para a maioria das plataformas a partir do site, http://www.python.org/, e distribuídos livremente. 
-Esta texto introduz o leitor informalmente aos conceitos básicos e aspectos do sistema e linguagem Coral. É aconselhável ter um interpretador Python disponível para se poder *por a mão na massa”, porém todos os exemplos são auto-contidos, assim o tutorial também pode ser lido sem que haja a necessidade de se estar on-line. 
+Esta texto introduz o leitor informalmente aos conceitos básicos e aspectos do sistema e linguagem Coral. É aconselhável ter um interpretador Python disponível para se poder *por a mão na massa*, porém todos os exemplos são auto-contidos, assim o tutorial também pode ser lido sem que haja a necessidade de se estar on-line. 
 Para uma descrição dos módulos e objetos padrão, veja o documento Referência da Biblioteca Python. O Manual de Referência Python oferece uma definição formal da linguagem e extença documentação. Existem também diversos livros abordando Python em maior profundidade. 
 Este tutorial não almeja ser abrangente ou abordar todos os aspectos, nem mesmo todos os mais frequentes. Ao invés disso, ele introduz muitas das características dignas de nota em Coral, e fornecerá a você uma boa idéia sobre o estilo e o sabor da linguagem (de nossa linguagem). Após a leitura, você deve ser capaz de ler e escrever programas e módulos em Coral, e estará pronto para aprender mais sobre os diversos módulos de biblioteca descritos na Referência da Biblioteca Python e Coral.
 
@@ -86,11 +86,11 @@ Linha de comandos
 O modulo coral do Python é o compilador que traduz código em Coral para o bytecode do Python. Ele cria todos os comandos necessário para a utilização do Coral como: 
 
 * coral [ARQUIVO]
-    - conpila arquivos com extenção '.coral' para '.pyc's
+    - conpila arquivos com extenção *.coral* para *.pyc*s
 * traduzir [ARQUIVO]
     - traduz arquivos do Coral  para Python e vice-versa, dependendo da exenteção passada.
 * coralexec [ARQUIVO]
-    - compila e executa arquivos com extenção '.coral' para '.pyc's
+    - compila e executa arquivos com extenção *.coral* para *.pyc*s
 * icoral
     - incia o modo iterativo do coral, nesse modo o interpretador requisita por comandos Coral ou Python iterativamente através do prompt primário.
 
@@ -102,8 +102,8 @@ O interpretador é iniciado ao executar icoral no shell  de seu Linux::
 
     $ icoral
 
-Digitando um caracter EOF() (Control-D no UNIX) diretamente no prompt força o interpretador a sair com status de saída zero. Se isso não funcionar, voce pode sair do interpretador através da digitação do seguinte: ‘exit'. 
-Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (‘>>> ') ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (‘... '). 
+Digitando um caracter EOF() (Control-D no UNIX) diretamente no prompt força o interpretador a sair com status de saída zero. Se isso não funcionar, voce pode sair do interpretador através da digitação do seguinte: *exit*. 
+Quando os comandos são lidos a partir do console (tty), diz-se que o interpretador está em modo interativo. Nesse modo ele requisita por um próximo comando através do prompt primário, tipicamente três sinais de maior-que (*>>> *) ou (In[n]); para linhas de continuação do comando corrente, o prompt secundário default são três pontos (*... *). 
 O interpretador imprime uma mensagem de boas vindas, informando seu número de versão e uma nota legal de copyright antes de oferecer o primeiro prompt::
 
     $ icoral 
@@ -134,7 +134,7 @@ Em sistemas UNIXBSD, scripts Coral podem ser transformados em executáveis, como
 
     #! /usr/bin/env coralexec 
 
-(Assumindo que o interpretador foi incluído do caminho de busca do usuário (PATH)) e que o script tenha a permissão de acesso habilitada para execução. O ‘#!' deve estar no início do arquivo .Em algumas plataformas esta linha inicial deve ser finalizada no estilo U NIX-style com (‘\n'), ao invés do estilo Mac OS (‘\r') ou mesmo a terminação típica do Windows (‘\r\n'). Observe que o caracter ‘#' designa comentários em Coral. 
+(Assumindo que o interpretador foi incluído do caminho de busca do usuário (PATH)) e que o script tenha a permissão de acesso habilitada para execução. O *#!* deve estar no início do arquivo .Em algumas plataformas esta linha inicial deve ser finalizada no estilo U NIX-style com (*\n*), ao invés do estilo Mac OS (*\r*) ou mesmo a terminação típica do Windows (*\r\n*). Observe que o caracter *#* designa comentários em Coral. 
 Para atribuir permissão de execução (plataforma Unix) ao seu script Python, utilize o comando chmod::
 
     $ chmod +x meuscript.coral 
