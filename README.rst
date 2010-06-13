@@ -18,7 +18,7 @@ Resumo
 Coral é uma linguagem de programação poderosa e de fácil aprendizado. Ela possui estruturas de dados de alto nível eficientes, bem como adota uma abordagem simples e efetiva para a programação orientada a objetos. Sua sintaxe elegante e tipagem dinâmica, em adição à sua natureza interpretada, tornam Coral ideal para scripting e para o desenvolvimento rápido de aplicações em diversas áreas e na maioria das plataformas.  Esta magnífica linguamge, é similar a linguagem de programação Python sendo interpretada por sua Maquina Virtual e compatível com programas Pythons existentes.
 Coral não se trata exatamente de uma nova linguagem, sintaticamente ela é exatamente igual a linguagem Python somante modificando suas palavras reservadas para o português. Otra característica importante é que novas traduções de bibliotecas python podem ser acrescentadas de maneira fácil e elegante. O interpretador Coral é facilmente extensível incorporando novas funcionalidaes e traduções do Python, simplesmente adicionando um dicionario para os termos utilizados.
 O interpretador de Python é utilizado, para gereção de seu bytecodes sendo também plenamente interoperável com Python e vice-versa. A utilização de qualquer bibliotéca Python é totalmente transparente onde são utilizadas e estão disponíveis para a maioria das plataformas a partir do site, http://www.python.org/, e distribuídos livremente. 
-Esta texto introduz o leitor informalmente aos conceitos básicos e aspectos do sistema e linguagem Coral. É aconselhável ter um interpretador Python disponível para se poder “por a mão na massa”, porém todos os exemplos são auto-contidos, assim o tutorial também pode ser lido sem que haja a necessidade de se estar on-line. 
+Esta texto introduz o leitor informalmente aos conceitos básicos e aspectos do sistema e linguagem Coral. É aconselhável ter um interpretador Python disponível para se poder *por a mão na massa”, porém todos os exemplos são auto-contidos, assim o tutorial também pode ser lido sem que haja a necessidade de se estar on-line. 
 Para uma descrição dos módulos e objetos padrão, veja o documento Referência da Biblioteca Python. O Manual de Referência Python oferece uma definição formal da linguagem e extença documentação. Existem também diversos livros abordando Python em maior profundidade. 
 Este tutorial não almeja ser abrangente ou abordar todos os aspectos, nem mesmo todos os mais frequentes. Ao invés disso, ele introduz muitas das características dignas de nota em Coral, e fornecerá a você uma boa idéia sobre o estilo e o sabor da linguagem (de nossa linguagem). Após a leitura, você deve ser capaz de ler e escrever programas e módulos em Coral, e estará pronto para aprender mais sobre os diversos módulos de biblioteca descritos na Referência da Biblioteca Python e Coral.
 
@@ -27,7 +27,7 @@ Este tutorial não almeja ser abrangente ou abordar todos os aspectos, nem mesmo
 Abrindo o Apetite
 =================
 
-Coral é uma linguagem interpretada, que pode fazer com que você economize um tempo considerável, uma vez que não há necessidade de compilação e vinculação(linking) durante o desenvolvimento. O interpretador pode ser usado interativamente, o que torna fácil experimentar diversas características da linguagem, escrever programas “descartáveis”, ou testar funções em um desenvolvimento bottom-up. É também uma útil calculadora de mesa. 
+Coral é uma linguagem copilada e interpretada, uma vez que há necessidade de compilação para bytecode python. O interpretador pode ser usado interativamente, o que torna fácil experimentar diversas características da linguagem, escrever programas *descartáveis*, ou testar funções em um desenvolvimento bottom-up. É também uma útil calculadora de mesa. 
 
 * Coral permite a escrita de programas compactos e legíveis. Programas escritos em Coral são tipicamente mais curtos do que seus equivalentes em C ou C++, por diversas razões:
 * os tipos de alto-nível permitem que você expresse operações complexas em uma único comando (statement); 
@@ -109,13 +109,18 @@ O interpretador imprime uma mensagem de boas vindas, informando seu número de v
     (icoral 1.0) 
     >>> 
 
-Linhas de continuação são necessárias em construções multi-linha. Como exemplo, dê uma olhada nesse comando *se*::
+Linhas de continuação são necessárias em construções multi-linha. Como exemplo, dê uma olhada nesse comando *para cada*::
 
-    >>> o_mundo_eh_plano = Verdadeiro
-    >>> se o_mundo_eh_plano: 
-    ...        imprima "Cuidado para não cair fora dele!" 
-    ... 
-    Cuidado para não cair fora dele!
+    >>> para cada letra em "Gustavo":
+    ...     imprima letra
+    ...
+    G
+    u
+    s
+    t
+    a
+    v
+    o
 
 
 Scripts Executáveis em Coral
