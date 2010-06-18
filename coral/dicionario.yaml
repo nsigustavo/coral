@@ -38,8 +38,8 @@ deletar: __del__
 entrar: __enter__
 sair: __exit__
 #__biltins__
-Falso: False
-Verdadeiro: True
+Falso: 'False'
+Verdadeiro: 'True'
 todos: all
 algum: any
 aplicar: apply
