@@ -7,16 +7,105 @@ import yaml
 from os import path, getcwd
 import sys
 from copy import deepcopy
-from ghelpers import folder
+
 
 
 class Tradutor(object):
 
     def __init__(self):
-        self.dicionario = {}
+        self.dicionario = {'Falso': 'False',
+ 'Vazio': 'None',
+ 'Verdadeiro': 'True',
+ 'abrir': 'open',
+ 'ajuda': 'help',
+ 'algum': 'any',
+ 'anexar': 'append',
+ 'apague': 'del',
+ 'aplicar': 'apply',
+ 'arquivo': 'file',
+ 'arredondar': 'round',
+ 'atualizar': 'reload',
+ 'boliano': 'bool',
+ 'chamar': '__call__',
+ 'chamavel': 'callable',
+ 'chaves': 'keys',
+ 'classe': 'class',
+ 'com': 'with',
+ 'como': 'as',
+ 'como_chave': 'has_key',
+ 'conjunto': 'set',
+ 'contar': 'count',
+ 'de': 'from',
+ 'defina': 'def',
+ 'deletar': '__del__',
+ 'dicionario': 'dict',
+ 'e': 'and',
+ 'eh': 'is',
+ 'ehinstancia': 'isinstance',
+ 'ehsubclasse': 'issubclass',
+ 'elevar': 'pow',
+ 'em': 'in',
+ 'enquanto': 'while',
+ 'entrar': '__enter__',
+ 'enumerar': 'enumerate',
+ 'exceto': 'except',
+ 'exprecao': 'lambda',
+ 'extender': 'extend',
+ 'faixa': 'xrange',
+ 'fatiar': 'slice',
+ 'finalmente': 'finally',
+ 'formato': 'format',
+ 'funcao': 'def',
+ 'importe': 'import',
+ 'imprima': 'print',
+ 'imprimir': 'print',
+ 'indece': 'index',
+ 'iniciar': '__init__',
+ 'inserir': 'insert',
+ 'intervalo': 'xrange',
+ 'invertido': 'reversed',
+ 'itens': 'items',
+ 'iterar': 'iter',
+ 'iteritens': 'iteritems',
+ 'itervalores': 'itervalues',
+ 'l': 'lambda',
+ 'licensa': 'license',
+ 'lista': 'list',
+ 'methodoestatico': 'staticmethod',
+ 'metodo': 'def',
+ 'metodoDeClasse': 'classmethod',
+ 'na': 'in',
+ 'nao': 'not',
+ 'objeto': 'object',
+ 'ordenado': 'sorted',
+ 'ordenar': 'sort',
+ 'ou': 'or',
+ 'para': 'for',
+ 'passar': 'pass',
+ 'produza': 'yield',
+ 'propriedade': 'property',
+ 'provoque': 'raise',
+ 'proximo': 'next',
+ 'reduzir': 'reduce',
+ 'remover': 'remove',
+ 'retirar': 'pop',
+ 'retorne': 'return',
+ 'reverter': 'reverse',
+ 'romper': 'break',
+ 'sair': 'exit',
+ 'se': 'if',
+ 'senao': 'else',
+ 'senaose': 'elif',
+ 'somar': 'sum',
+ 'tamanho': 'len',
+ 'tente': 'try',
+ 'tipo': 'type',
+ 'todos': 'all',
+ 'tupla': 'tuple'}
+
         pastas = deepcopy(sys.path)
-        pastas += [folder(), getcwd()]
-        arquivos = [path.join(pasta, 'dicionario.yaml') for pasta in pastas]
+        pastas += [getcwd()]
+        arquivos = [path.join(getcwd(), 'dicionario.yaml') for pasta in pastas]
         for arquivo in arquivos:
             if path.isfile(arquivo):
                 with open(arquivo) as f:

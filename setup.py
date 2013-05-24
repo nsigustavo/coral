@@ -1,9 +1,8 @@
 from setuptools import setup, find_packages
-import sys, os
 
-version = '0.1'
+version = '0.1.1'
 
-with file('README') as readme:
+with file('README.rst') as readme:
     long_description = readme.read()
 
 setup(name='coral',
